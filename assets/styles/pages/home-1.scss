@@ -1,0 +1,45 @@
+.home-1 {
+  height: 100vh;
+  width: 100%;
+}
+
+.home-1__bg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $br1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.home-1__wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.home-1__title {
+  @include h1;
+  position: absolute;
+  bottom: vw(96);
+  left: vw(64);
+  max-width: vw(672);
+}
+
+.home-1__underline-text {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: vw(6);
+    width: 100%;
+    height: vw(4);
+    background-color: var(--white);
+  }
+}
