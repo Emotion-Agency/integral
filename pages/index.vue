@@ -75,12 +75,14 @@ definePageMeta({
           </div>
         </div>
         <div class="home-4__right-block">
-          <img class="home-4__img" src="/images/1.jpg" alt="Image" />
+          <img class="home-4__img" src="/images/1.jpg" alt="" />
         </div>
       </div>
     </div>
   </section>
   <section class="section section--nm home-5">
-    <div class="container home-5__wrapper"></div>
+    <div class="container home-5__wrapper">
+      <img class="home-5__img" src="/images/2.jpg" alt="" />
+    </div>
   </section>
 </template>
