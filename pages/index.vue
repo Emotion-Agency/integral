@@ -137,7 +137,7 @@ const links = [
       </h1>
     </div>
   </section>
-  <section class="section section--nm home-2">
+  <section class="section home-2">
     <div class="container home-2__wrapper">
       <AboutInfo class="home-2__about-text"
         >Empowering brands at the forefront of digital</AboutInfo
@@ -158,7 +158,7 @@ const links = [
   <section class="section section--nm home-3">
     <HomeVideo class="home-3__bg" />
   </section>
-  <section class="section section--nm home-4">
+  <section class="section home-4">
     <div class="container home-4__wrapper">
       <AboutInfo>About</AboutInfo>
       <div class="grid home-4__content">
