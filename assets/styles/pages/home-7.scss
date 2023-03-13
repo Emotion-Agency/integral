@@ -1,0 +1,31 @@
+.home-7 {
+  padding-top: vw(80);
+  padding-bottom: vw(86);
+}
+
+.home-7__wrapper {
+  row-gap: vw(50);
+}
+
+.home-7__text {
+  @include suisse-med;
+  @include col(3, 8);
+}
+
+.home-7__underline-text {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: vw(2);
+    width: 100%;
+    height: vw(2);
+    background-color: var(--white);
+  }
+}
+
+.home-7__btn {
+  @include col(3, 8);
+}

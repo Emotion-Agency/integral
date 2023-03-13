@@ -4,6 +4,103 @@ import { pageTransition } from '~~/assets/scripts/transition'
 definePageMeta({
   pageTransition,
 })
+
+const services = [
+  {
+    title: 'Brand',
+    items: [
+      'Strategy',
+      'Art Direction',
+      'Identity Systems',
+      'Merchandise',
+      'Campaigns',
+    ],
+  },
+  {
+    title: 'Fashion',
+    items: [
+      '3D Wearables',
+      'Digital Fashion',
+      'Material Libraries',
+      'Virtual Stores',
+      'AR Dressing',
+    ],
+  },
+  {
+    title: 'Product',
+    items: [
+      'UIX',
+      'Motion Design',
+      'Creative Front-end',
+      '3D Content',
+      'Web XR',
+    ],
+  },
+  {
+    title: 'Web3',
+    items: [
+      'Advisory',
+      'Design Sprints',
+      'NFT Co-creation',
+      'Generative NFTs',
+      'Metaverse',
+    ],
+  },
+]
+
+const radios = [
+  {
+    idNumber: 1,
+    name: 'Simplified',
+  },
+  {
+    idNumber: 2,
+    name: 'Scalable',
+  },
+  {
+    idNumber: 3,
+    name: 'Growth',
+  },
+]
+
+const itemsInfo = [
+  {
+    mainText:
+      'Sophisticated solutions meticulously crafted around the needs of your audience.',
+    subText:
+      'Utilising the power of design & narrative, we turn complex concepts into meaningful digital experiences, from vision to launch.',
+    blocks: [
+      'Bespoke Strategies',
+      'Engaging Creative',
+      'Streamlined Process',
+      'Technical Expertise',
+    ],
+  },
+  // {
+  //   mainText:
+  //     'Design thinking allows inherent scalability of your products from the core.',
+  //   subText:
+  //     'Establishing practical & purpose driven systems builds versatile asset libraries, whilst affording the flexibility of modularity.',
+  //   blocks: [
+  //     'Collaborative Workflows',
+  //     'Design Systems',
+  //     'Modular Assets',
+  //     'Reusable Libraries',
+  //   ],
+  // },
+  // {
+  //   mainText:
+  //     'Expert knowledge catalyses your path to the forefront of the digital world.',
+  //   subText:
+  //     'Working diligently to accelerate & amplify your digital journey, through transparent partnerships and agile implementations.',
+  //   blocks: [
+  //     'Authentic Partnerships',
+  //     'Data Driven',
+  //     'Dynamic Solutions',
+  //     'Innovative Applications',
+  //   ],
+  // },
+]
 </script>
 
 <template>
@@ -83,6 +180,110 @@ definePageMeta({
   <section class="section section--nm home-5">
     <div class="container home-5__wrapper">
       <img class="home-5__img" src="/images/2.jpg" alt="" />
+    </div>
+  </section>
+  <section class="section section--nm home-6">
+    <div class="container home-6__wrapper">
+      <p class="home-6__about-text">
+        Services
+        <span class="home-6__arrow">
+          <IconsAngleArrow />
+        </span>
+      </p>
+      <div class="grid home-6__info-wrapper">
+        <div v-for="(el, idx) in services" :key="idx" class="home-6__info">
+          <h3 class="home-6__title">
+            {{ el.title }}
+            <span class="home-6__info-arrow">
+              <IconsAngleArrow />
+            </span>
+          </h3>
+          <ul class="home-6__text-list">
+            <li
+              v-for="(elem, index) in el.items"
+              :key="index"
+              class="home-6__text-li"
+            >
+              <p class="home-6__text">
+                <span class="home-6__symbol">¬ </span>{{ elem }}
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--nm home-7">
+    <div class="grid container home-7__wrapper">
+      <p class="home-7__text">
+        We tailor each experience around your story, to create strategically
+        aligned solutions
+        <span class="home-7__underline-text"> as unique as your vision.</span>
+      </p>
+      <TheButton class="home-7__btn"> What’s your story </TheButton>
+    </div>
+  </section>
+  <section class="section section--nm home-8">
+    <div class="container home-8__wrapper">
+      <p class="home-8__about-text">
+        Approach
+        <span class="home-8__arrow">
+          <IconsAngleArrow />
+        </span>
+      </p>
+      <div class="grid home-8__content">
+        <div class="home-8__left-block">
+          <img class="home-8__img" src="/images/3.jpg" alt="" />
+        </div>
+        <div class="home-8__right-block">
+          <ul class="home-8__menu">
+            <li
+              v-for="(radio, id) in radios"
+              :key="id"
+              class="home-8__menu-btn"
+            >
+              <input
+                :id="`home-8__input-radio${radio.idNumber}`"
+                class="home-8__radio"
+                type="radio"
+                name="home-8__radios"
+                checked
+              />
+              <label
+                class="home-8__text"
+                :for="`home-8__input-radio${radio.idNumber}`"
+              >
+                {{ radio.name }}
+              </label>
+            </li>
+          </ul>
+          <ul class="home-8__text-list">
+            <li
+              v-for="(item, idx) in itemsInfo"
+              :key="idx"
+              class="home-8__info"
+            >
+              <div class="home-8__text-wrapper">
+                <p class="home-8__main-text">
+                  {{ item.mainText }}
+                </p>
+                <p class="home-8__subtext">
+                  {{ item.subText }}
+                </p>
+              </div>
+              <div class="home-8__blocks-wrapper">
+                <p
+                  v-for="(block, id) in item.blocks"
+                  :key="id"
+                  class="home-8__block-name"
+                >
+                  {{ block }}
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </template>
