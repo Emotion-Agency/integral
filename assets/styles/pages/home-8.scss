@@ -3,25 +3,6 @@
   padding-bottom: vw(96);
 }
 
-.home-8__about-text {
-  @include suisse-med;
-  color: var(--dark);
-  display: flex;
-  align-items: baseline;
-  column-gap: vw(6);
-}
-
-.home-8__arrow {
-  width: vw(13);
-  height: vw(13);
-
-  svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .home-8__content {
   align-items: center;
   margin-top: vw(100);

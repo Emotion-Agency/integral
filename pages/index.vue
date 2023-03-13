@@ -101,6 +101,30 @@ const itemsInfo = [
   //   ],
   // },
 ]
+
+const links = [
+  {
+    textLink: '1kx',
+  },
+  {
+    textLink: 'Astrid Andersen',
+  },
+  {
+    textLink: 'Aura',
+  },
+  {
+    textLink: 'BrightID',
+  },
+  {
+    textLink: 'Carteblock',
+  },
+  {
+    textLink: 'Connext',
+  },
+  {
+    textLink: 'Gitcoin',
+  },
+]
 </script>
 
 <template>
@@ -115,12 +139,9 @@ const itemsInfo = [
   </section>
   <section class="section section--nm home-2">
     <div class="container home-2__wrapper">
-      <p class="home-2__about-text">
-        Empowering brands at the forefront of digital
-        <span class="home-2__arrow">
-          <IconsAngleArrow />
-        </span>
-      </p>
+      <AboutInfo class="home-2__about-text"
+        >Empowering brands at the forefront of digital</AboutInfo
+      >
       <p class="home-2__text">
         Integral is a multi-disciplinary design studio, catalysing insights with
         technology to build thoughtful
@@ -139,12 +160,7 @@ const itemsInfo = [
   </section>
   <section class="section section--nm home-4">
     <div class="container home-4__wrapper">
-      <p class="home-4__about-text">
-        About
-        <span class="home-4__arrow">
-          <IconsAngleArrow />
-        </span>
-      </p>
+      <AboutInfo>About</AboutInfo>
       <div class="grid home-4__content">
         <div class="home-4__left-block">
           <h2 class="home-4__title">
@@ -184,12 +200,7 @@ const itemsInfo = [
   </section>
   <section class="section section--nm home-6">
     <div class="container home-6__wrapper">
-      <p class="home-6__about-text">
-        Services
-        <span class="home-6__arrow">
-          <IconsAngleArrow />
-        </span>
-      </p>
+      <AboutInfo>Services</AboutInfo>
       <div class="grid home-6__info-wrapper">
         <div v-for="(el, idx) in services" :key="idx" class="home-6__info">
           <h3 class="home-6__title">
@@ -225,12 +236,7 @@ const itemsInfo = [
   </section>
   <section class="section section--nm home-8">
     <div class="container home-8__wrapper">
-      <p class="home-8__about-text">
-        Approach
-        <span class="home-8__arrow">
-          <IconsAngleArrow />
-        </span>
-      </p>
+      <AboutInfo>Approach</AboutInfo>
       <div class="grid home-8__content">
         <div class="home-8__left-block">
           <img class="home-8__img" src="/images/3.jpg" alt="" />
@@ -284,6 +290,23 @@ const itemsInfo = [
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="section section--nm home-9">
+    <div class="container home-9__wrapper">
+      <AboutInfo>Approach</AboutInfo>
+      <ul class="home-9__links-wrapper">
+        <li v-for="(link, idx) in links" :key="idx" class="home-9__item">
+          <a
+            href="/"
+            class="home-9__link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {{ link.textLink }}
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </template>

@@ -9,19 +9,10 @@
 
 .home-2__about-text {
   @include suisse-small;
-  color: var(--dark);
-  display: flex;
-  align-items: baseline;
-  column-gap: vw(6);
-}
 
-.home-2__arrow {
-  width: vw(13);
-  height: vw(13);
-  svg {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .about-info__arrow {
+    width: vw(15);
+    height: vw(15);
   }
 }
 

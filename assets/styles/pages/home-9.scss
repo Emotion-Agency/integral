@@ -1,0 +1,19 @@
+.home-9 {
+  padding-top: vw(96);
+  padding-bottom: vw(182);
+}
+
+.home-9__links-wrapper {
+  margin-top: vw(106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: vw(26);
+  row-gap: vw(10);
+}
+
+.home-9__link {
+  @include mono-med;
+  text-transform: uppercase;
+}
