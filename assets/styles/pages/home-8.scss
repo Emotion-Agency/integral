@@ -17,7 +17,9 @@
   max-width: 100%;
   height: 100%;
   margin-left: auto;
+  border-radius: 66px;
 }
+
 .home-8__right-block {
   @include col(8, 12);
 }
@@ -74,6 +76,7 @@
   align-items: center;
   gap: vw(8);
   margin-top: vw(40);
+  margin-left: vw(20);
 }
 
 .home-8__block-name {
