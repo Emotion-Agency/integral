@@ -6,6 +6,15 @@
   line-height: 100%;
   letter-spacing: -0.016em;
   font-feature-settings: 'salt' on;
+
+  @media (max-width: $br1) {
+    font-size: size(60, 30);
+    font-feature-settings: normal;
+  }
+
+  @media (max-width: $br4) {
+    font-size: 30px;
+  }
 }
 
 @mixin suisse-med {
