@@ -4,11 +4,30 @@
   display: flex;
   align-items: baseline;
   column-gap: vw(12);
+
+  @media (max-width: $br1) {
+    column-gap: 6px;
+  }
 }
 
 .about-info__arrow {
   width: vw(18);
   height: vw(18);
+
+  @media (max-width: $br1) {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media (max-width: $br3) {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (max-width: $br4) {
+    width: 10px;
+    height: 10px;
+  }
 
   svg {
     display: block;

@@ -1,5 +1,9 @@
 .footer {
   padding-bottom: vw(40);
+
+  @media (max-width: $br1) {
+    padding-bottom: 20px;
+  }
 }
 
 .footer__title {
@@ -8,11 +12,35 @@
   display: flex;
   align-items: baseline;
   column-gap: vw(14);
+
+  @media (max-width: $br1) {
+    font-size: size(48, 24);
+    column-gap: 8px;
+  }
+
+  @media (max-width: $br4) {
+    font-size: 24px;
+  }
 }
 
 .footer__arrow {
   width: vw(24);
   height: vw(24);
+
+  @media (max-width: $br1) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (max-width: $br3) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: $br4) {
+    width: 12px;
+    height: 12px;
+  }
 
   svg {
     display: block;
@@ -27,6 +55,10 @@
 
 .footer__btn {
   margin-top: vw(134);
+
+  @media (max-width: $br1) {
+    margin-top: 124px;
+  }
 
   .button__text {
     background-color: transparent;
@@ -49,12 +81,26 @@
 .footer__content {
   position: relative;
   margin-top: vw(252);
+
+  @media (max-width: $br1) {
+    margin-top: 160px;
+  }
 }
 
 .footer__about {
   @include col(1, 4);
   @include suisse-small;
   font-size: vw(20);
+
+  @media (max-width: $br1) {
+    @include col(1, 6);
+    font-size: size(20, 12);
+  }
+
+  @media (max-width: $br4) {
+    font-size: 12px;
+    @include col(1, 3);
+  }
 }
 
 .footer__nav-menu {
@@ -63,12 +109,26 @@
   font-size: vw(20);
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $br1) {
+    display: none;
+  }
 }
 
 .footer__socials-menu {
   @include col(10, 11);
   @include suisse-small;
   font-size: vw(20);
+
+  @media (max-width: $br1) {
+    @include col(12, 12);
+    font-size: size(20, 12);
+  }
+
+  @media (max-width: $br4) {
+    font-size: 12px;
+    @include col(4, 4);
+  }
 }
 
 .footer__text-info {
@@ -78,4 +138,8 @@
   position: absolute;
   right: vw(120);
   top: vw(104);
+
+  @media (max-width: $br1) {
+    display: none;
+  }
 }

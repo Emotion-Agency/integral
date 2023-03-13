@@ -1,28 +1,58 @@
 .home-4 {
   padding-top: vw(125);
+
+  @media (max-width: $br1) {
+    padding-top: 50px;
+  }
 }
 
 .home-4__content {
   align-items: center;
   margin-top: vw(30);
+
+  @media (max-width: $br1) {
+    margin-top: 48px;
+  }
 }
 
 .home-4__left-block {
   @include col(1, 6);
+
+  @media (max-width: $br1) {
+    @include col(1, 12);
+  }
+
+  @media (max-width: $br4) {
+    @include col(1, 4);
+  }
 }
 
 .home-4__title {
   @include suisse-med;
-  display: flex;
-  align-items: flex-end;
-  max-width: vw(400);
-  font-size: vw(48);
+
+  @media (min-width: $br1) {
+    display: flex;
+    align-items: flex-end;
+    font-size: vw(48);
+    max-width: vw(400);
+  }
+
+  @media (max-width: $br1) {
+    font-size: 24px;
+    font-feature-settings: 'salt' on;
+  }
 }
 
 .home-4__title-arrow {
   svg {
     width: vw(48);
     height: vw(48);
+
+    @media (max-width: $br1) {
+      width: 13px;
+      height: 13px;
+      display: inherit;
+    }
     path {
       fill: var(--white);
     }
@@ -31,11 +61,23 @@
 
 .home-4__text-wrapper {
   max-width: vw(503);
+
+  @media (max-width: $br1) {
+    max-width: 70%;
+  }
+
+  @media (max-width: $br3) {
+    max-width: 100%;
+  }
 }
 
 .home-4__med-desc {
   @include suisse-med;
   margin-top: vw(50);
+
+  @media (max-width: $br1) {
+    margin-top: 48px;
+  }
 }
 
 .home-4__underline-text {
@@ -50,6 +92,11 @@
     width: 100%;
     height: vw(2);
     background-color: var(--white);
+
+    @media (max-width: $br1) {
+      bottom: 1px;
+      height: 2px;
+    }
   }
 }
 
@@ -57,14 +104,35 @@
   @include suisse-small;
   margin-top: vw(40);
   color: var(--grey);
+
+  @media (max-width: $br1) {
+    font-size: size(24, 14);
+    margin-top: 24px;
+  }
+
+  @media (max-width: $br4) {
+    font-size: 14px;
+  }
 }
 
 .home-4__btn-wrapper {
   margin-top: vw(50);
+
+  @media (max-width: $br4) {
+    margin-top: 24px;
+  }
 }
 
 .home-4__right-block {
   @include col(7, 12);
+
+  @media (max-width: $br1) {
+    @include col(1, 12);
+  }
+
+  @media (max-width: $br4) {
+    @include col(1, 4);
+  }
 }
 
 .home-4__img {
@@ -72,5 +140,13 @@
   width: vw(576);
   max-width: 100%;
   height: 100%;
-  margin-left: auto;
+
+  @media (min-width: $br1) {
+    margin-left: auto;
+  }
+
+  @media (max-width: $br1) {
+    width: 100%;
+    object-fit: cover;
+  }
 }

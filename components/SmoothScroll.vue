@@ -13,6 +13,7 @@ onMounted(async () => {
     stepSize: 0.9,
     scrollbar: true,
     useKeyboard: false,
+    saveScrollPosition: true,
     raf,
   })
 })

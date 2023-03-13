@@ -1,5 +1,9 @@
 .home-5 {
   padding-top: vw(192);
+
+  @media (max-width: $br1) {
+    padding-top: 82px;
+  }
 }
 
 .home-5__wrapper {
@@ -13,4 +17,8 @@
   max-width: 100%;
   height: 100%;
   width: vw(768);
+
+  @media (max-width: $br1) {
+    width: 100%;
+  }
 }

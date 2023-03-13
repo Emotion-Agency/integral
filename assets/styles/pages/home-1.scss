@@ -36,15 +36,7 @@
   }
 
   @media (max-width: $br1) {
-    max-width: 60%;
-  }
-
-  @media (max-width: $br2) {
-    max-width: 70%;
-  }
-
-  @media (max-width: $br3) {
-    max-width: 85%;
+    max-width: 80%;
   }
 
   @media (max-width: $br4) {
@@ -54,14 +46,20 @@
 
 .home-1__underline-text {
   position: relative;
+  display: inline-block;
 
   &::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: vw(6);
+    bottom: vw(0);
     width: 100%;
     height: vw(4);
     background-color: var(--white);
+
+    @media (max-width: $br1) {
+      bottom: -6px;
+      height: 2px;
+    }
   }
 }

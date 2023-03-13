@@ -1,16 +1,45 @@
 .home-9 {
-  padding-top: vw(192);
+  padding-top: vw(220);
   padding-bottom: vw(366);
+
+  @media (max-width: $br1) {
+    padding-top: 114px;
+    padding-bottom: 128px;
+  }
 }
 
 .home-9__links-wrapper {
   margin-top: vw(106);
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   column-gap: vw(26);
   row-gap: vw(10);
+
+  @media (min-width: $br3) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $br1) {
+    column-gap: 16px;
+    row-gap: 8px;
+  }
+
+  @media (max-width: $br3) {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 54px;
+    width: 100vw;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-left: -32px;
+  }
+
+  @media (max-width: $br3) {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-left: -16px;
+  }
 }
 
 .home-9__link {

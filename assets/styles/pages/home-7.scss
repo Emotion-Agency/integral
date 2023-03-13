@@ -1,18 +1,41 @@
 .home-7 {
   padding-top: vw(160);
+
+  @media (max-width: $br1) {
+    padding-top: 100px;
+  }
 }
 
 .home-7__wrapper {
   row-gap: vw(50);
+
+  @media (max-width: $br1) {
+    row-gap: 36px;
+  }
 }
 
 .home-7__text {
   @include suisse-med;
   @include col(3, 8);
+  display: inline-block;
+  width: 100%;
+
+  @media (max-width: $br1) {
+    @include col(3, 10);
+  }
+
+  @media (max-width: $br3) {
+    @include col(1, 10);
+  }
+
+  @media (max-width: $br4) {
+    @include col(1, 4);
+  }
 }
 
 .home-7__underline-text {
   position: relative;
+  display: inline-block;
 
   &::before {
     content: '';
@@ -22,9 +45,26 @@
     width: 100%;
     height: vw(2);
     background-color: var(--white);
+
+    @media (max-width: $br4) {
+      bottom: 0;
+      height: 2px;
+    }
   }
 }
 
 .home-7__btn {
   @include col(3, 8);
+
+  @media (max-width: $br1) {
+    @include col(3, 10);
+  }
+
+  @media (max-width: $br3) {
+    @include col(1, 10);
+  }
+
+  @media (max-width: $br4) {
+    @include col(1, 4);
+  }
 }

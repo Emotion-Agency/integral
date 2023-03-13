@@ -1,20 +1,33 @@
 .home-6 {
   padding-top: vw(92);
+
+  @media (max-width: $br1) {
+    padding-top: 50px;
+  }
 }
 
 .home-6__info-wrapper {
   margin-top: vw(125);
   row-gap: vw(96);
+
+  @media (max-width: $br1) {
+    margin-top: 90px;
+    row-gap: 58px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .home-6__info {
   color: var(--dark);
 
-  &:nth-of-type(2n + 1) {
-    @include col(3, 6);
-  }
-  &:nth-of-type(2n + 2) {
-    @include col(7, 10);
+  @media (min-width: $br1) {
+    &:nth-of-type(2n + 1) {
+      @include col(3, 6);
+    }
+
+    &:nth-of-type(2n + 2) {
+      @include col(7, 10);
+    }
   }
 
   &--active {
@@ -34,11 +47,35 @@
   display: flex;
   align-items: baseline;
   column-gap: vw(16);
+
+  @media (max-width: $br1) {
+    font-size: size(48, 24);
+    column-gap: 8px;
+  }
+
+  @media (max-width: $br4) {
+    font-size: 24px;
+  }
 }
 
 .home-6__info-arrow {
   width: vw(22);
   height: vw(22);
+
+  @media (max-width: $br1) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (max-width: $br3) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: $br4) {
+    width: 12px;
+    height: 12px;
+  }
 
   svg {
     display: block;
@@ -50,6 +87,11 @@
 .home-6__text-list {
   margin-top: vw(75);
   margin-left: vw(48);
+
+  @media (max-width: $br1) {
+    margin-top: 32px;
+    margin-left: 16px;
+  }
 }
 
 .home-6__text {
@@ -57,4 +99,8 @@
   display: flex;
   align-items: baseline;
   column-gap: vw(14);
+
+  @media (max-width: $br1) {
+    column-gap: 6px;
+  }
 }

@@ -393,12 +393,22 @@
   dependencies:
     mime "^3.0.0"
 
-"@emotionagency/smoothscroll@latest":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@emotionagency/smoothscroll/-/smoothscroll-1.0.3.tgz#731efff534f0086818f6349df818232cb7d87a6e"
-  integrity sha512-23IJoDv6Ibn2wxCt5SwPk88oo8LJ7Wu2QEFg/GGc2IiWn0KXFxEBTByHeCNSRfIw1Z4nI1VBvzRIMStiRq5bVQ==
+"@emotionagency/smoothscroll@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@emotionagency/smoothscroll/-/smoothscroll-1.0.5.tgz#8485a13bc2ebf5ced9e7ef01a3a8789c03bb40d5"
+  integrity sha512-qD47+hQMC0wJ5CQjNeK9FTl7RFKL7Rnll3QwYKEnCIFRxM8du9bBuBp7QkmTLWTcEmOl0oKP3Sb56HR3FeRIiw==
   dependencies:
+    "@emotionagency/utils" "^1.1.1"
+    ssr-window "^4.0.2"
+    tiny-emitter "^2.1.0"
     virtual-scroll "^2.1.1"
+
+"@emotionagency/utils@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@emotionagency/utils/-/utils-1.1.1.tgz#058cfe8513893cb341976fd186ea4b21f4e54474"
+  integrity sha512-aO754aHjNEeA2Bfk/o5FruSXEAhL1A+WJb4ZLxFNsqm8y9gOwmrWIifqpG3hXO+mNLprPYAF6gMeHP4IuXzoSg==
+  dependencies:
+    ssr-window "^4.0.2"
 
 "@emotionagency/utils@latest":
   version "1.0.7"
@@ -5428,6 +5438,11 @@ spdx-license-ids@^3.0.0:
   version "3.0.12"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.12.tgz#69077835abe2710b65f03969898b6637b505a779"
   integrity sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==
+
+ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
 
 stable@^0.1.8:
   version "0.1.8"

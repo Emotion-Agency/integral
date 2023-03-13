@@ -76,30 +76,30 @@ const itemsInfo = [
       'Technical Expertise',
     ],
   },
-  // {
-  //   mainText:
-  //     'Design thinking allows inherent scalability of your products from the core.',
-  //   subText:
-  //     'Establishing practical & purpose driven systems builds versatile asset libraries, whilst affording the flexibility of modularity.',
-  //   blocks: [
-  //     'Collaborative Workflows',
-  //     'Design Systems',
-  //     'Modular Assets',
-  //     'Reusable Libraries',
-  //   ],
-  // },
-  // {
-  //   mainText:
-  //     'Expert knowledge catalyses your path to the forefront of the digital world.',
-  //   subText:
-  //     'Working diligently to accelerate & amplify your digital journey, through transparent partnerships and agile implementations.',
-  //   blocks: [
-  //     'Authentic Partnerships',
-  //     'Data Driven',
-  //     'Dynamic Solutions',
-  //     'Innovative Applications',
-  //   ],
-  // },
+  {
+    mainText:
+      'Design thinking allows inherent scalability of your products from the core.',
+    subText:
+      'Establishing practical & purpose driven systems builds versatile asset libraries, whilst affording the flexibility of modularity.',
+    blocks: [
+      'Collaborative Workflows',
+      'Design Systems',
+      'Modular Assets',
+      'Reusable Libraries',
+    ],
+  },
+  {
+    mainText:
+      'Expert knowledge catalyses your path to the forefront of the digital world.',
+    subText:
+      'Working diligently to accelerate & amplify your digital journey, through transparent partnerships and agile implementations.',
+    blocks: [
+      'Authentic Partnerships',
+      'Data Driven',
+      'Dynamic Solutions',
+      'Innovative Applications',
+    ],
+  },
 ]
 
 const links = [
@@ -268,6 +268,7 @@ const links = [
               v-for="(item, idx) in itemsInfo"
               :key="idx"
               class="home-8__info"
+              :class="idx === 0 && 'home-8__info--active'"
             >
               <div class="home-8__text-wrapper">
                 <p class="home-8__main-text">
@@ -294,7 +295,7 @@ const links = [
   </section>
   <section class="section section--nm home-9">
     <div class="container home-9__wrapper">
-      <AboutInfo>Approach</AboutInfo>
+      <AboutInfo>Trusted by</AboutInfo>
       <ul class="home-9__links-wrapper">
         <li v-for="(link, idx) in links" :key="idx" class="home-9__item">
           <a
