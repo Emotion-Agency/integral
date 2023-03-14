@@ -64,6 +64,14 @@
     background-color: transparent;
     color: var(--white);
     border: 2px solid var(--white);
+
+    @media (max-width: $br1) {
+      font-size: size(20, 16);
+    }
+
+    @media (max-width: $br4) {
+      font-size: 16px;
+    }
   }
 
   .button__arrow {

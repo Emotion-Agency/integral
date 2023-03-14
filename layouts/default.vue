@@ -6,6 +6,11 @@ useFonts()
 onMounted(async () => {
   const { hello } = await import('~/assets/scripts/utils/hello')
   hello()
+
+  const { winSizes } = await import('~/assets/scripts/utils/winSizes')
+  const { resize } = await import('@emotionagency/utils')
+
+  resize.on(winSizes)
 })
 
 useHead({

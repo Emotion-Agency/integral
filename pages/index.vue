@@ -169,6 +169,7 @@ const links = [
               <IconsAngleArrow />
             </span>
           </h2>
+          <img class="home-4__mobile-img" src="/images/1.jpg" alt="" />
           <div class="home-4__text-wrapper">
             <p class="home-4__med-desc">
               Operating at the intersection of physical & digital, specialising
@@ -263,6 +264,7 @@ const links = [
               </label>
             </li>
           </ul>
+          <img class="home-8__moible-img" src="/images/3.jpg" alt="" />
           <ul class="home-8__text-list">
             <li
               v-for="(item, idx) in itemsInfo"

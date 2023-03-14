@@ -4,12 +4,12 @@
   <footer class="footer">
     <div class="container footer__wrapper">
       <div class="footer__email" action="/">
-        <legend class="footer__title">
+        <h3 class="footer__title">
           Let’s talk
           <span class="footer__arrow">
             <IconsAngleArrow />
           </span>
-        </legend>
+        </h3>
         <TheButton class="footer__btn">info@integral.im</TheButton>
       </div>
       <div class="grid footer__content">
