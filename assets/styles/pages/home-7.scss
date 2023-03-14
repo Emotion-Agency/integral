@@ -41,13 +41,12 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: vw(2);
+    bottom: 0;
     width: 100%;
     height: vw(2);
     background-color: var(--white);
 
-    @media (max-width: $br4) {
-      bottom: 0;
+    @media (max-width: $br1) {
       height: 2px;
     }
   }

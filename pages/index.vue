@@ -68,7 +68,7 @@ const itemsInfo = [
     mainText:
       'Sophisticated solutions meticulously crafted around the needs of your audience.',
     subText:
-      'Utilising the power of design & narrative, we turn complex concepts into meaningful digital experiences, from vision to launch.',
+      'Utilising the power of <span class="home-8__underline-text">design & narrative</span>, we turn complex concepts into meaningful digital experiences, from <span class="home-8__underline-text">vision to launch</span>.',
     blocks: [
       'Bespoke Strategies',
       'Engaging Creative',
@@ -80,7 +80,7 @@ const itemsInfo = [
     mainText:
       'Design thinking allows inherent scalability of your products from the core.',
     subText:
-      'Establishing practical & purpose driven systems builds versatile asset libraries, whilst affording the flexibility of modularity.',
+      'Establishing <span class="home-8__underline-text">practical & purpose driven</span> systems builds versatile asset libraries, whilst affording the <span class="home-8__underline-text">flexibility of modularity</span>.',
     blocks: [
       'Collaborative Workflows',
       'Design Systems',
@@ -92,7 +92,7 @@ const itemsInfo = [
     mainText:
       'Expert knowledge catalyses your path to the forefront of the digital world.',
     subText:
-      'Working diligently to accelerate & amplify your digital journey, through transparent partnerships and agile implementations.',
+      'Working diligently to <span class="home-8__underline-text">accelerate & amplify</span> your digital journey, through transparent partnerships and <span class="home-8__underline-text">agile implementations</span>.',
     blocks: [
       'Authentic Partnerships',
       'Data Driven',
@@ -203,7 +203,12 @@ const links = [
     <div class="container home-6__wrapper">
       <AboutInfo>Services</AboutInfo>
       <div class="grid home-6__info-wrapper">
-        <div v-for="(el, idx) in services" :key="idx" class="home-6__info">
+        <div
+          v-for="(el, idx) in services"
+          :key="idx"
+          class="home-6__info"
+          :class="idx === 0 && 'home-6__info--active'"
+        >
           <h3 class="home-6__title">
             {{ el.title }}
             <span class="home-6__info-arrow">
@@ -264,7 +269,7 @@ const links = [
               </label>
             </li>
           </ul>
-          <img class="home-8__moible-img" src="/images/3.jpg" alt="" />
+          <img class="home-8__mobile-img" src="/images/3.jpg" alt="" />
           <ul class="home-8__text-list">
             <li
               v-for="(item, idx) in itemsInfo"
@@ -276,9 +281,7 @@ const links = [
                 <p class="home-8__main-text">
                   {{ item.mainText }}
                 </p>
-                <p class="home-8__subtext">
-                  {{ item.subText }}
-                </p>
+                <p class="home-8__subtext" v-html="item.subText" />
               </div>
               <div class="home-8__blocks-wrapper">
                 <p

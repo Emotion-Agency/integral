@@ -52,13 +52,12 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: vw(0);
+    bottom: 0;
     width: 100%;
-    height: vw(4);
+    height: vw(2);
     background-color: var(--white);
 
     @media (max-width: $br1) {
-      bottom: -6px;
       height: 2px;
     }
   }

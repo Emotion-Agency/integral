@@ -37,7 +37,6 @@
 
   @media (max-width: $br1) {
     display: none;
-    width: 100%;
   }
 }
 
@@ -164,6 +163,26 @@
   }
 }
 
+.home-8__underline-text {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: vw(0);
+    width: 100%;
+    height: vw(2);
+    background-color: var(--white);
+
+    @media (max-width: $br1) {
+      bottom: 0;
+      height: 2px;
+    }
+  }
+}
+
 .home-8__blocks-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +195,10 @@
     margin-top: 20px;
     margin-left: 0;
     gap: 8px;
+  }
+
+  @media (max-width: $br4) {
+    margin-left: 20px;
   }
 }
 
