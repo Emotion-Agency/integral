@@ -3,7 +3,7 @@
 <template>
   <footer class="footer">
     <div class="container footer__wrapper">
-      <div class="footer__email" action="/">
+      <div class="footer__email">
         <h3 class="footer__title">
           Let’s talk
           <span class="footer__arrow">
