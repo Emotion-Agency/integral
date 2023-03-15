@@ -158,7 +158,7 @@ const links = [
   <section class="section section--nm home-3">
     <HomeVideo class="home-3__bg" />
   </section>
-  <section class="section home-4">
+  <section id="about" class="section home-4">
     <div class="container home-4__wrapper">
       <AboutInfo>About</AboutInfo>
       <div class="grid home-4__content">
@@ -199,7 +199,7 @@ const links = [
       <img class="home-5__img" src="/images/2.jpg" alt="" />
     </div>
   </section>
-  <section class="section section--nm home-6">
+  <section id="services" class="section section--nm home-6">
     <div class="container home-6__wrapper">
       <AboutInfo>Services</AboutInfo>
       <div class="grid home-6__info-wrapper">
@@ -240,7 +240,7 @@ const links = [
       <TheButton class="home-7__btn"> What’s your story </TheButton>
     </div>
   </section>
-  <section class="section section--nm home-8">
+  <section id="approach" class="section section--nm home-8">
     <div class="container home-8__wrapper">
       <AboutInfo>Approach</AboutInfo>
       <div class="grid home-8__content">

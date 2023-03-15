@@ -15,5 +15,5 @@ const onClick = () => {
       </button>
     </div>
   </header>
-  <PopupMenu :open="isOpened" />
+  <PopupMenu :open="isOpened" @close="isOpened = false" />
 </template>
