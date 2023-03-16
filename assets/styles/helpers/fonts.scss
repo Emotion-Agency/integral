@@ -8,7 +8,6 @@
 
   @media (min-width: $br1) {
     font-size: size(60, 30);
-    font-feature-settings: normal;
   }
 
   @media (max-width: $br1) {
@@ -20,18 +19,17 @@
   font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  font-size: vw(32);
   line-height: 120%;
   letter-spacing: -0.016em;
   font-feature-settings: 'salt' on;
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(32, 20);
-    font-feature-settings: 'ss01' on;
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 20px;
+    // font-feature-settings: 'ss01' on;
   }
 }
 
@@ -39,7 +37,6 @@
   font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  font-size: vw(24);
   line-height: 130%;
   letter-spacing: -0.016em;
   font-feature-settings: 'ss01' on;
@@ -57,16 +54,15 @@
   font-family: 'SuisseIntlMono', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  font-size: vw(24);
   line-height: 130%;
   letter-spacing: -0.032em;
   font-feature-settings: 'ss01' on;
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(24, 12);
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 12px;
   }
 }
@@ -75,17 +71,16 @@
   font-family: 'SuisseIntlMono', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  font-size: vw(16);
   line-height: 100%;
   letter-spacing: -0.032em;
   text-transform: capitalize;
   font-feature-settings: 'ss01' on;
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(16, 12);
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 12px;
   }
 }

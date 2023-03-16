@@ -62,8 +62,8 @@
               Twitter
             </a>
           </li>
+          <p class="footer__text-info">Beauty lies in the details</p>
         </ul>
-        <p class="footer__text-info">Beauty lies in the details</p>
       </div>
     </div>
   </footer>

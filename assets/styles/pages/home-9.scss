@@ -1,6 +1,8 @@
 .home-9 {
-  padding-top: vw(220);
-  padding-bottom: vw(366);
+  @media (min-width: $br1) {
+    padding-top: vw(220);
+    padding-bottom: vw(366);
+  }
 
   @media (max-width: $br1) {
     padding-top: 114px;
