@@ -2,8 +2,11 @@
   background-color: transparent;
   display: flex;
   align-items: center;
-  height: vw(48);
   width: fit-content;
+
+  @media (min-width: $br1) {
+    height: size(48, 44);
+  }
 
   @media (max-width: $br1) {
     height: 44px;
@@ -22,16 +25,15 @@
   height: 100%;
   padding-left: vw(36);
   padding-right: vw(36);
-  font-size: vw(20);
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(20, 14);
-    padding-left: 24px;
-    padding-right: 24px;
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -45,6 +47,11 @@
   height: vw(48);
   flex-shrink: 0;
 
+  @media (min-width: $br1) {
+    width: size(48, 44);
+    height: size(48, 44);
+  }
+
   @media (max-width: $br1) {
     width: 44px;
     height: 44px;
@@ -52,12 +59,7 @@
 
   svg {
     display: block;
-    width: vw(16);
-    height: vw(16);
-
-    @media (max-width: $br1) {
-      width: 16px;
-      height: 16px;
-    }
+    width: 16px;
+    height: 16px;
   }
 }
