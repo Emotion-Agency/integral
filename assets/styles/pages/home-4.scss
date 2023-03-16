@@ -90,10 +90,15 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: vw(2);
+    height: vw(2.5);
     background-color: var(--white);
 
     @media (max-width: $br1) {
+      height: size(2.5, 2);
+    }
+
+    @media (max-width: $br4) {
+      bottom: -1px;
       height: 2px;
     }
   }
