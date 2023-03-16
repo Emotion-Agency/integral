@@ -34,14 +34,11 @@
 
 .home-4__title {
   @include suisse-med;
+  display: inline-block;
 
   @media (min-width: $br1) {
-    display: flex;
-    align-items: flex-end;
     font-size: size(48, 24);
-    max-width: size(380, 375);
-    min-width: vw(340);
-    column-gap: vw(10);
+    max-width: size(520, 375);
   }
 
   @media (max-width: $br1) {
