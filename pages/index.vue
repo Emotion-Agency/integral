@@ -140,8 +140,8 @@ const links = [
   <section class="section home-2">
     <div class="container home-2__wrapper">
       <AboutInfo class="home-2__about-text"
-        >Empowering brands at the forefront of digital</AboutInfo
-      >
+        >Empowering brands at the forefront of digital
+      </AboutInfo>
       <p class="home-2__text">
         Integral is a multi-disciplinary design studio, catalysing insights with
         technology to build thoughtful
@@ -160,7 +160,7 @@ const links = [
   </section>
   <section id="about" class="section home-4">
     <div class="container home-4__wrapper">
-      <AboutInfo>About</AboutInfo>
+      <AboutInfo>About </AboutInfo>
       <div class="grid home-4__content">
         <div class="home-4__left-block">
           <h2 class="home-4__title">
@@ -201,7 +201,7 @@ const links = [
   </section>
   <section id="services" class="section section--nm home-6">
     <div class="container home-6__wrapper">
-      <AboutInfo>Services</AboutInfo>
+      <AboutInfo>Services </AboutInfo>
       <div class="grid home-6__info-wrapper">
         <div
           v-for="(el, idx) in services"
@@ -242,7 +242,7 @@ const links = [
   </section>
   <section id="approach" class="section section--nm home-8">
     <div class="container home-8__wrapper">
-      <AboutInfo>Approach</AboutInfo>
+      <AboutInfo>Approach </AboutInfo>
       <div class="grid home-8__content">
         <div class="home-8__left-block">
           <img class="home-8__img" src="/images/3.jpg" alt="" />
@@ -300,7 +300,7 @@ const links = [
   </section>
   <section class="section section--nm home-9">
     <div class="container home-9__wrapper">
-      <AboutInfo>Trusted by</AboutInfo>
+      <AboutInfo>Trusted by </AboutInfo>
       <ul class="home-9__links-wrapper">
         <li v-for="(link, idx) in links" :key="idx" class="home-9__item">
           <a

@@ -44,11 +44,11 @@
   letter-spacing: -0.016em;
   font-feature-settings: 'ss01' on;
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(24, 12);
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 12px;
   }
 }

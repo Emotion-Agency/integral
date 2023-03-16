@@ -9,7 +9,9 @@
 }
 
 .home-2__wrapper {
-  max-width: vw(880);
+  @media (min-width: $br1) {
+    max-width: size(880, 375);
+  }
 
   @media (max-width: $br1) {
     max-width: 100%;
@@ -20,27 +22,18 @@
   @include suisse-small;
 
   .about-info__arrow {
-    width: vw(15);
-    height: vw(15);
+    svg {
+      display: inline-block;
 
-    @media (min-width: $ls) {
-      width: size(15, 12);
-      height: size(15, 12);
-    }
+      @media (min-width: $br1) {
+        width: size(15, 7);
+        height: size(15, 7);
+      }
 
-    @media (max-width: $br1) {
-      width: 12px;
-      height: 12px;
-    }
-
-    @media (max-width: $br3) {
-      width: 10px;
-      height: 10px;
-    }
-
-    @media (max-width: $br4) {
-      width: 7px;
-      height: 7px;
+      @media (max-width: $br1) {
+        width: 7px;
+        height: 7px;
+      }
     }
   }
 }
@@ -49,7 +42,7 @@
   @include suisse-med;
   margin-top: vw(96);
 
-  @media (min-width: $ls) {
+  @media (min-width: $br1) {
     font-size: size(32, 16);
   }
 
@@ -75,11 +68,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: vw(2.5);
     background-color: var(--white);
 
-    @media (min-width: $ls) {
-      height: size(2.5, 2);
+    @media (min-width: $br1) {
+      height: size(3, 2);
     }
 
     @media (max-width: $br1) {
