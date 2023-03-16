@@ -1,5 +1,7 @@
 .home-6 {
-  padding-top: vh(92);
+  @media (min-width: $br1) {
+    padding-top: vh(92);
+  }
 
   @media (max-width: $br1) {
     padding-top: 50px;

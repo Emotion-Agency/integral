@@ -1,5 +1,7 @@
 .home-8 {
-  padding-top: vw(192);
+  @media (min-width: $br1) {
+    padding-top: vw(192);
+  }
 
   @media (max-width: $br1) {
     padding-top: 78px;
@@ -8,7 +10,10 @@
 
 .home-8__content {
   align-items: center;
-  margin-top: vw(100);
+
+  @media (min-width: $br1) {
+    margin-top: vw(100);
+  }
 
   @media (max-width: $br1) {
     margin-top: 90px;

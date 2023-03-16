@@ -1,5 +1,7 @@
 .home-5 {
-  padding-top: vw(192);
+  @media (min-width: $br1) {
+    padding-top: vw(192);
+  }
 
   @media (max-width: $br1) {
     padding-top: 82px;
