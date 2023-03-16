@@ -76,6 +76,7 @@
 .home-4__text-wrapper {
   @media (min-width: $br1) {
     max-width: size(503, 375);
+    min-width: vw(503);
   }
 
   @media (max-width: $br1) {
