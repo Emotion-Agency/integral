@@ -1,3 +1,10 @@
+.nav-hidden {
+  .navbar {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
 .header {
   position: fixed;
   padding: vw(28) 0;

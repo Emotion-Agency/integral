@@ -4,10 +4,24 @@ const isOpened = ref(false)
 const onClick = () => {
   isOpened.value = !isOpened.value
 }
+
+let navbarPos
+
+onMounted(async () => {
+  const { default: NavbarPos } = await import(
+    '~/assets/scripts/utils/navbarPos'
+  )
+  navbarPos = new NavbarPos()
+  navbarPos.init()
+})
+
+onBeforeUnmount(() => {
+  navbarPos && navbarPos.destroy()
+})
 </script>
 
 <template>
-  <header class="header">
+  <header class="header navbar">
     <div class="container header__wrapper">
       <NuxtLink to="/" class="header__logo">Integral</NuxtLink>
       <button class="header__btn" @click="onClick">
