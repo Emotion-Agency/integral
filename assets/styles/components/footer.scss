@@ -124,7 +124,7 @@
 }
 
 .footer__socials-menu {
-  @include col(10, 11);
+  @include col(10, 12);
   @include suisse-small;
   position: relative;
   font-size: vw(20);
@@ -147,7 +147,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: max-content;
+  width: fit-content;
 
   @media (max-width: $br1) {
     display: none;
