@@ -39,27 +39,26 @@
 .header__logo {
   @include suisse-small;
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(24, 16);
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 16px;
   }
 }
 
 .header__btn {
   @include suisse-small;
-  font-size: vw(20);
   line-height: 100%;
   background-color: transparent;
   color: var(--grey);
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(20, 14);
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 14px;
   }
 }
