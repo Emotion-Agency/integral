@@ -23,6 +23,11 @@
     width: vw(15);
     height: vw(15);
 
+    @media (min-width: $ls) {
+      width: size(15, 12);
+      height: size(15, 12);
+    }
+
     @media (max-width: $br1) {
       width: 12px;
       height: 12px;
@@ -44,19 +49,19 @@
   @include suisse-med;
   margin-top: vw(96);
 
+  @media (min-width: $ls) {
+    font-size: size(32, 16);
+  }
+
   @media (max-width: $br1) {
     margin-top: 52px;
-    font-size: size(32, 16);
+    font-size: 16px;
     line-height: 130%;
     max-width: 70%;
   }
 
   @media (max-width: $br3) {
     max-width: 100%;
-  }
-
-  @media (max-width: $br4) {
-    font-size: 16px;
   }
 }
 
@@ -73,8 +78,12 @@
     height: vw(2.5);
     background-color: var(--white);
 
+    @media (min-width: $ls) {
+      height: size(2.5, 2);
+    }
+
     @media (max-width: $br1) {
-      height: size(2.5, 1.5);
+      height: 2px;
     }
 
     @media (max-width: $br4) {
