@@ -129,7 +129,10 @@ const links = [
 
 <template>
   <section class="section section--nm home-1">
-    <img class="home-1__bg" src="/images/main.jpg" alt="Background" />
+    <!-- <img class="home-1__bg" src="/images/main.jpg" alt="Background" /> -->
+    <video class="home-1__bg" autoplay muted loop>
+      <source src="/images/main.webm" type="video/webm" />
+    </video>
     <div class="container home-1__wrapper">
       <h1 class="home-1__title">
         A multidisciplinary creative consultancy shaping
@@ -156,7 +159,10 @@ const links = [
     </div>
   </section>
   <section class="section section--nm home-3">
-    <HomeVideo class="home-3__bg" />
+    <!-- <HomeVideo class="home-3__bg" /> -->
+    <video class="home-3__bg" autoplay muted loop>
+      <source src="/images/4.webm" type="video/webm" />
+    </video>
   </section>
   <section id="about" class="section home-4">
     <div class="container home-4__wrapper">
@@ -169,7 +175,10 @@ const links = [
               <IconsAngleArrow />
             </span>
           </h2>
-          <img class="home-4__mobile-img" src="/images/1.jpg" alt="" />
+          <!-- <img class="home-4__mobile-img" src="/images/1.jpg" alt="" /> -->
+          <video class="home-4__mobile-img" autoplay muted loop>
+            <source src="/images/1.webm" type="video/webm" />
+          </video>
           <div class="home-4__text-wrapper">
             <p class="home-4__med-desc">
               Operating at the intersection of physical & digital, specialising
@@ -189,14 +198,20 @@ const links = [
           </div>
         </div>
         <div class="home-4__right-block">
-          <img class="home-4__img" src="/images/1.jpg" alt="" />
+          <!-- <img class="home-4__img" src="/images/1.jpg" alt="" /> -->
+          <video class="home-4__img" autoplay muted loop>
+            <source src="/images/1.webm" type="video/webm" />
+          </video>
         </div>
       </div>
     </div>
   </section>
   <section class="section section--nm home-5">
     <div class="container home-5__wrapper">
-      <img class="home-5__img" src="/images/2.jpg" alt="" />
+      <!-- <img class="home-5__img" src="/images/2.jpg" alt="" /> -->
+      <video class="home-5__img" autoplay muted loop>
+        <source src="/images/2.webm" type="video/webm" />
+      </video>
     </div>
   </section>
   <section id="services" class="section section--nm home-6">
@@ -245,7 +260,10 @@ const links = [
       <AboutInfo>Approach </AboutInfo>
       <div class="grid home-8__content">
         <div class="home-8__left-block">
-          <img class="home-8__img" src="/images/3.jpg" alt="" />
+          <!-- <img class="home-8__img" src="/images/3.jpg" alt="" /> -->
+          <video class="home-8__img" autoplay muted loop>
+            <source src="/images/3.webm" type="video/webm" />
+          </video>
         </div>
         <div class="home-8__right-block">
           <div class="home-8__menu">
@@ -268,7 +286,10 @@ const links = [
               </span>
             </p>
           </div>
-          <img class="home-8__mobile-img" src="/images/3.jpg" alt="" />
+          <!-- <img class="home-8__mobile-img" src="/images/3.jpg" alt="" /> -->
+          <video class="home-8__mobile-img" autoplay muted loop>
+            <source src="/images/3.webm" type="video/webm" />
+          </video>
           <ul class="home-8__text-list">
             <li
               v-for="(item, idx) in itemsInfo"
