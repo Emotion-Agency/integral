@@ -3,6 +3,22 @@
   display: flex;
   align-items: center;
   width: fit-content;
+  transform: translateX(size(-48, -44));
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(0);
+
+    .button__arrow {
+      &:last-of-type {
+        scale: 0;
+      }
+
+      &:first-of-type {
+        scale: 1;
+      }
+    }
+  }
 
   @media (min-width: $br1) {
     height: size(48, 44);
@@ -43,9 +59,12 @@
   align-items: center;
   background-color: var(--white);
   border-radius: 50%;
-  width: vw(48);
-  height: vw(48);
   flex-shrink: 0;
+  transition: scale 0.3s ease;
+
+  &:first-of-type {
+    scale: 0;
+  }
 
   @media (min-width: $br1) {
     width: size(48, 44);
