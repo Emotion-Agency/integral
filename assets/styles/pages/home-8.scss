@@ -73,57 +73,52 @@
   }
 }
 
-.home-8__radio[type='radio'] {
-  display: none;
-}
-
-.home-8__radio[type='radio']:checked {
-  + .home-8__text {
-    color: var(--white);
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: vw(-64);
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      display: block;
-      width: vw(36);
-      height: vw(36);
-      background: url('/right-arrow.svg');
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-      @media (max-width: $br1) {
-        left: -28px;
-        width: 22px;
-        height: 22px;
-      }
-
-      @media (max-width: $br3) {
-        left: -24px;
-        width: 18px;
-        height: 18px;
-      }
-    }
-  }
-}
-
 .home-8__text {
   @include suisse-med;
-  font-size: vw(48);
+  position: relative;
   color: var(--dark);
-  cursor: pointer;
 
-  @media (max-width: $br1) {
-    margin-left: 20px;
-    font-size: size(48, 24);
+  svg {
+    display: block;
+    position: absolute;
+    left: vw(-34);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+    @media (min-width: $br1) {
+      width: size(24, 16);
+      height: size(24, 16);
+    }
+
+    @media (max-width: $br1) {
+      width: 16px;
+      height: 16px;
+      left: -24px;
+    }
+
+    path {
+      fill: var(--dark);
+    }
   }
 
-  @media (max-width: $br4) {
+  @media (min-width: $br1) {
+    font-size: size(24, 12);
+  }
+
+  @media (max-width: $br1) {
     font-size: 24px;
+    margin-left: 20px;
+  }
+
+  &--active {
+    color: var(--white);
+
+    svg {
+      path {
+        fill: var(--white);
+      }
+    }
   }
 }
 

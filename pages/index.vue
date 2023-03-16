@@ -48,20 +48,20 @@ const services = [
   },
 ]
 
-const radios = [
-  {
-    idNumber: 1,
-    name: 'Simplified',
-  },
-  {
-    idNumber: 2,
-    name: 'Scalable',
-  },
-  {
-    idNumber: 3,
-    name: 'Growth',
-  },
-]
+// const radios = [
+//   {
+//     idNumber: 1,
+//     name: 'Simplified',
+//   },
+//   {
+//     idNumber: 2,
+//     name: 'Scalable',
+//   },
+//   {
+//     idNumber: 3,
+//     name: 'Growth',
+//   },
+// ]
 
 const itemsInfo = [
   {
@@ -248,27 +248,26 @@ const links = [
           <img class="home-8__img" src="/images/3.jpg" alt="" />
         </div>
         <div class="home-8__right-block">
-          <ul class="home-8__menu">
-            <li
-              v-for="(radio, id) in radios"
-              :key="id"
-              class="home-8__menu-btn"
-            >
-              <input
-                :id="`home-8__input-radio${radio.idNumber}`"
-                class="home-8__radio"
-                type="radio"
-                name="home-8__radios"
-                checked
-              />
-              <label
-                class="home-8__text"
-                :for="`home-8__input-radio${radio.idNumber}`"
-              >
-                {{ radio.name }}
-              </label>
-            </li>
-          </ul>
+          <div class="home-8__menu">
+            <p class="home-8__text home-8__text--active">
+              Simplified
+              <span class="home-8__right-arrow">
+                <IconsRightArrow />
+              </span>
+            </p>
+            <p class="home-8__text">
+              Scalable
+              <span class="home-8__right-arrow">
+                <IconsRightArrow />
+              </span>
+            </p>
+            <p class="home-8__text">
+              Growth
+              <span class="home-8__right-arrow">
+                <IconsRightArrow />
+              </span>
+            </p>
+          </div>
           <img class="home-8__mobile-img" src="/images/3.jpg" alt="" />
           <ul class="home-8__text-list">
             <li
