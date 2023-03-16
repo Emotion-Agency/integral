@@ -62,29 +62,26 @@
 
 .popup__nav-menu {
   @include suisse-med;
-  font-size: vw(48);
 
-  @media (max-width: $br1) {
+  @media (min-width: $br1) {
     font-size: size(48, 24);
-    font-feature-settings: 'ss01' on;
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 24px;
   }
 }
 
 .popup__socials-menu {
   @include suisse-small;
-  font-size: vw(20);
   margin-top: vw(20);
 
   @media (max-width: $br1) {
     font-size: size(20, 12);
-    margin-top: 12px;
   }
 
-  @media (max-width: $br4) {
+  @media (max-width: $br1) {
     font-size: 12px;
+    margin-top: 12px;
   }
 }
