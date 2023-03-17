@@ -1,8 +1,6 @@
 .home-9 {
-  @media (min-width: $br1) {
-    padding-top: vw(220);
-    padding-bottom: vw(366);
-  }
+  padding-top: 220px;
+  padding-bottom: 366px;
 
   @media (max-width: $br1) {
     padding-top: 114px;
@@ -11,11 +9,11 @@
 }
 
 .home-9__links-wrapper {
-  margin-top: vw(106);
+  margin-top: 106px;
   display: flex;
   align-items: center;
-  column-gap: vw(26);
-  row-gap: vw(10);
+  column-gap: 26px;
+  row-gap: 10px;
 
   @media (min-width: $br3) {
     justify-content: center;

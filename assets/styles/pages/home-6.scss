@@ -1,7 +1,5 @@
 .home-6 {
-  @media (min-width: $br1) {
-    padding-top: vh(92);
-  }
+  padding-top: 92px;
 
   @media (max-width: $br1) {
     padding-top: 50px;
@@ -9,8 +7,8 @@
 }
 
 .home-6__info-wrapper {
-  margin-top: vh(125);
-  row-gap: vh(96);
+  margin-top: 125px;
+  row-gap: 96px;
   justify-items: center;
 
   @media (max-width: $br1) {
@@ -46,36 +44,22 @@
 
 .home-6__title {
   @include suisse-med;
-  font-size: vh(48);
+  font-size: 48px;
   display: flex;
   align-items: baseline;
-  column-gap: vh(16);
+  column-gap: 16px;
 
   @media (max-width: $br1) {
-    font-size: size(48, 24);
-    column-gap: 8px;
-  }
-
-  @media (max-width: $br4) {
     font-size: 24px;
+    column-gap: 8px;
   }
 }
 
 .home-6__info-arrow {
-  width: vh(22);
-  height: vh(22);
+  width: 22px;
+  height: 22px;
 
   @media (max-width: $br1) {
-    width: 18px;
-    height: 18px;
-  }
-
-  @media (max-width: $br3) {
-    width: 16px;
-    height: 16px;
-  }
-
-  @media (max-width: $br4) {
     width: 12px;
     height: 12px;
   }
@@ -88,8 +72,8 @@
 }
 
 .home-6__text-list {
-  margin-top: vh(75);
-  margin-left: vh(48);
+  margin-top: 75px;
+  margin-left: 48px;
 
   @media (max-width: $br1) {
     margin-top: 32px;
@@ -101,10 +85,11 @@
   @include mono-med;
   display: flex;
   align-items: baseline;
-  column-gap: vh(14);
-  font-size: vh(24);
+  column-gap: 14px;
+  font-size: 24px;
 
   @media (max-width: $br1) {
     column-gap: 6px;
+    font-size: 12px;
   }
 }

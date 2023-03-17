@@ -48,21 +48,6 @@ const services = [
   },
 ]
 
-// const radios = [
-//   {
-//     idNumber: 1,
-//     name: 'Simplified',
-//   },
-//   {
-//     idNumber: 2,
-//     name: 'Scalable',
-//   },
-//   {
-//     idNumber: 3,
-//     name: 'Growth',
-//   },
-// ]
-
 const itemsInfo = [
   {
     mainText:
@@ -105,24 +90,35 @@ const itemsInfo = [
 const links = [
   {
     textLink: '1kx',
+    href: 'https://1kx.network/',
   },
   {
     textLink: 'Astrid Andersen',
+    href: 'https://astridandersen.com/',
   },
   {
     textLink: 'Aura',
+    href: 'https://aura.brightid.org/',
   },
   {
     textLink: 'BrightID',
+    href: 'https://www.brightid.org/',
   },
   {
     textLink: 'Carteblock',
+    href: 'https://www.carteblock.com/',
+  },
+  {
+    textLink: 'Emotion',
+    href: 'https://www.emotion-agency.com/',
   },
   {
     textLink: 'Connext',
+    href: 'https://www.connext.network/',
   },
   {
     textLink: 'Gitcoin',
+    href: 'https://www.gitcoin.co/',
   },
 ]
 </script>
@@ -208,10 +204,10 @@ const links = [
   </section>
   <section class="section section--nm home-5">
     <div class="container home-5__wrapper">
-      <!-- <img class="home-5__img" src="/images/2.jpg" alt="" /> -->
-      <video class="home-5__img" autoplay muted loop>
+      <img class="home-5__img" src="/images/2.jpg" alt="" />
+      <!-- <video class="home-5__img" autoplay muted loop>
         <source src="/images/2.webm" type="video/webm" />
-      </video>
+      </video> -->
     </div>
   </section>
   <section id="services" class="section section--nm home-6">
@@ -304,13 +300,15 @@ const links = [
                 <p class="home-8__subtext" v-html="item.subText" />
               </div>
               <div class="home-8__blocks-wrapper">
-                <p
+                <div
                   v-for="(block, id) in item.blocks"
                   :key="id"
-                  class="home-8__block-name"
+                  class="home-8__block"
                 >
-                  {{ block }}
-                </p>
+                  <p class="home-8__block-name">
+                    {{ block }}
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -324,7 +322,7 @@ const links = [
       <ul class="home-9__links-wrapper">
         <li v-for="(link, idx) in links" :key="idx" class="home-9__item">
           <a
-            href="/"
+            :href="link.href"
             class="home-9__link"
             rel="noopener noreferrer"
             target="_blank"

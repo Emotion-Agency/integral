@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  padding: vw(112) vw(96);
+  padding: 112px 96px;
   transform: translateX(100%);
   transition: transform 0.3s ease;
 
@@ -62,10 +62,7 @@
 
 .popup__nav-menu {
   @include suisse-med;
-
-  @media (min-width: $br1) {
-    font-size: size(48, 24);
-  }
+  font-size: 48px;
 
   @media (max-width: $br1) {
     font-size: 24px;
@@ -74,11 +71,8 @@
 
 .popup__socials-menu {
   @include suisse-small;
-  margin-top: vw(20);
-
-  @media (max-width: $br1) {
-    font-size: size(20, 12);
-  }
+  margin-top: 20px;
+  font-size: 20px;
 
   @media (max-width: $br1) {
     font-size: 12px;

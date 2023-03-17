@@ -51,6 +51,16 @@ const nav = [
             rel="noopener noreferrer"
             target="_blank"
           >
+            Email
+          </a>
+        </li>
+        <li class="popup__social">
+          <a
+            href="/"
+            class="popup__link"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Instagram
           </a>
         </li>

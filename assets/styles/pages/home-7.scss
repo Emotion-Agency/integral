@@ -1,7 +1,5 @@
 .home-7 {
-  @media (min-width: $br1) {
-    padding-top: vw(160);
-  }
+  padding-top: 160px;
 
   @media (max-width: $br1) {
     padding-top: 100px;
@@ -9,9 +7,7 @@
 }
 
 .home-7__wrapper {
-  @media (min-width: $br1) {
-    row-gap: vw(50);
-  }
+  row-gap: 50px;
 
   @media (max-width: $br1) {
     row-gap: 36px;
@@ -22,10 +18,11 @@
   @include suisse-med;
   @include col(3, 8);
   display: inline-block;
-  width: 100%;
+  max-width: 578px;
 
   @media (max-width: $br1) {
     @include col(3, 10);
+    max-width: 100%;
   }
 
   @media (max-width: $br3) {
@@ -46,12 +43,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    height: 3px;
     width: 100%;
     background-color: var(--white);
-
-    @media (min-width: $br1) {
-      height: size(3, 2);
-    }
 
     @media (max-width: $br1) {
       height: 2px;

@@ -7,7 +7,7 @@
 
 .header {
   position: fixed;
-  padding: vw(28) 0;
+  padding: 28px 0;
   width: 100%;
   z-index: 100;
   top: 0;
@@ -38,10 +38,7 @@
 
 .header__logo {
   @include suisse-small;
-
-  @media (min-width: $br1) {
-    font-size: size(24, 16);
-  }
+  font-size: 24px;
 
   @media (max-width: $br1) {
     font-size: 16px;
@@ -53,10 +50,7 @@
   line-height: 100%;
   background-color: transparent;
   color: var(--grey);
-
-  @media (min-width: $br1) {
-    font-size: size(20, 14);
-  }
+  font-size: 20px;
 
   @media (max-width: $br1) {
     font-size: 14px;

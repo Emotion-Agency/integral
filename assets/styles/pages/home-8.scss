@@ -1,7 +1,5 @@
 .home-8 {
-  @media (min-width: $br1) {
-    padding-top: vw(192);
-  }
+  padding-top: 192px;
 
   @media (max-width: $br1) {
     padding-top: 78px;
@@ -10,10 +8,7 @@
 
 .home-8__content {
   align-items: center;
-
-  @media (min-width: $br1) {
-    margin-top: vw(100);
-  }
+  margin-top: 100px;
 
   @media (max-width: $br1) {
     margin-top: 90px;
@@ -34,11 +29,10 @@
 
 .home-8__img {
   display: block;
-  width: vw(576);
+  width: 576px;
   max-width: 100%;
   height: 100%;
-  margin-left: auto;
-  border-radius: 66px;
+  margin: auto;
 
   @media (max-width: $br1) {
     display: none;
@@ -55,7 +49,6 @@
     max-width: 100%;
     height: 100%;
     margin-left: auto;
-    border-radius: 66px;
     width: 100%;
     margin-top: 10px;
   }
@@ -77,19 +70,18 @@
   @include suisse-med;
   position: relative;
   color: var(--dark);
+  font-size: 48px;
 
   svg {
     display: block;
     position: absolute;
-    left: vw(-34);
+    // left: vw(-34);
+    left: -40px;
     top: 0;
     bottom: 0;
     margin: auto 0;
-
-    @media (min-width: $br1) {
-      width: size(24, 16);
-      height: size(24, 16);
-    }
+    width: 26px;
+    height: 26px;
 
     @media (max-width: $br1) {
       width: 16px;
@@ -100,10 +92,6 @@
     path {
       fill: var(--dark);
     }
-  }
-
-  @media (min-width: $br1) {
-    font-size: size(24, 12);
   }
 
   @media (max-width: $br1) {
@@ -132,33 +120,33 @@
 
 .home-8__main-text {
   @include suisse-med;
-  margin-top: vw(50);
-  max-width: vw(424);
+  margin-top: 50px;
+  max-width: 424px;
 
   @media (max-width: $br1) {
     margin-top: 10px;
     max-width: 70%;
   }
 
-  @media (max-width: $br3) {
+  @media (max-width: $br4) {
     max-width: 100%;
   }
 }
 
 .home-8__subtext {
   @include suisse-small;
-  margin-top: vw(40);
+  margin-top: 40px;
   color: var(--grey);
-  max-width: vw(456);
+  max-width: 460px;
+  font-size: 24px;
 
   @media (max-width: $br1) {
-    font-size: size(24, 14);
+    font-size: 14px;
     margin-top: 20px;
     max-width: 70%;
   }
 
-  @media (max-width: $br3) {
-    font-size: 14px;
+  @media (max-width: $br4) {
     max-width: 100%;
   }
 }
@@ -171,15 +159,10 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: vw(0);
+    bottom: 0;
     width: 100%;
-    height: vw(2);
+    height: 2px;
     background-color: var(--white);
-
-    @media (max-width: $br1) {
-      bottom: 0;
-      height: 2px;
-    }
   }
 }
 
@@ -187,18 +170,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: vw(8);
-  margin-top: vw(40);
-  margin-left: vw(20);
+  gap: 8px;
+  margin-top: 40px;
+  max-width: 440px;
 
   @media (max-width: $br1) {
     margin-top: 20px;
-    margin-left: 0;
     gap: 8px;
-  }
-
-  @media (max-width: $br4) {
-    margin-left: 20px;
   }
 }
 
@@ -209,10 +187,11 @@
   box-shadow: 0px 1px 2px #666666;
   backdrop-filter: blur(15px);
   border-radius: 50px;
-  padding: vw(6) vw(8);
+  padding: 6px 8px;
   color: var(--grey);
+  width: fit-content;
 
   @media (max-width: $br1) {
-    padding: 6px;
+    padding: 6px 6px;
   }
 }

@@ -1,20 +1,10 @@
 .home-2 {
-  padding-top: vw(130);
-  padding-bottom: vw(212);
+  padding-top: 130px;
+  padding-bottom: 212px;
 
   @media (max-width: $br1) {
     padding-top: 52px;
     padding-bottom: 82px;
-  }
-}
-
-.home-2__wrapper {
-  @media (min-width: $br1) {
-    max-width: size(880, 375);
-  }
-
-  @media (max-width: $br1) {
-    max-width: 100%;
   }
 }
 
@@ -24,11 +14,8 @@
   .about-info__arrow {
     svg {
       display: inline-block;
-
-      @media (min-width: $br1) {
-        width: size(15, 7);
-        height: size(15, 7);
-      }
+      width: 15px;
+      height: 15px;
 
       @media (max-width: $br1) {
         width: 7px;
@@ -40,17 +27,15 @@
 
 .home-2__text {
   @include suisse-med;
-  margin-top: vw(96);
-
-  @media (min-width: $br1) {
-    font-size: size(32, 16);
-  }
+  margin-top: 96px;
+  font-size: 32px;
+  max-width: 768px;
 
   @media (max-width: $br1) {
     margin-top: 52px;
     font-size: 16px;
     line-height: 130%;
-    max-width: 50%;
+    max-width: 60%;
   }
 
   @media (max-width: $br3) {
@@ -67,12 +52,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    height: 3px;
     width: 100%;
     background-color: var(--white);
-
-    @media (min-width: $br1) {
-      height: size(3, 2);
-    }
 
     @media (max-width: $br1) {
       height: 2px;
